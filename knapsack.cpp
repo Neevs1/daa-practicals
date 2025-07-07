@@ -56,8 +56,15 @@ class knapsack{
     if(i<=n){
         x[i]=u/w[i];
     }
-
+    
     return x;
+   }
+   int calc_profit(vector<float> x){
+    int profit=0;
+    for(int i=0;i<n;i++){
+        profit+=x[i]*p[i];
+    }
+    return profit;
    }
 
 };
@@ -73,6 +80,7 @@ int main(){
     for(float a:x){
         cout<<a<<" ";
     }  
-    cout<<endl; 
+    cout<<endl;
+    cout<<"Profit is "<<k.calc_profit(x)<<endl; 
     return 0;
 }
