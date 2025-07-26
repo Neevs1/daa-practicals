@@ -127,3 +127,35 @@ int main(){ //main function
     cout<<"Profit is "<<k.calc_profit(x)<<endl; //calculate and print total profit
     return 0;
 }
+/*
+Enter size of knapsack
+5
+Enter total number of items
+3
+Enter profits and weights
+Enter weight 1
+7
+
+Enter profit 1
+700
+
+Enter weight 2
+1
+
+Enter profit 2
+500
+
+Enter weight 3
+3
+
+Enter profit 3
+900
+
+
+Input complete!
+Knapsack is
+1 1 0.142857
+Profit is 1500
+
+
+*/
